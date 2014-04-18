@@ -27,13 +27,6 @@ function hcbf_theme_theme() {
 }
 
 /**
- * Implements hook_page_alter()
- */
-function hcbf_theme_page_alter(&$page) {
-  dpm($page);
-}
-
-/**
  * Implements hook_form_FORM_ID_alter()
  *
  * Overrides the session_limit's session_limit_user_settings form.
