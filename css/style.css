@@ -2,3 +2,65 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
+
+.wrapper {
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.inverse-wrapper {
+  color: #fff;
+  background: url('../images/classy_fabric.png');
+}
+
+.inverse-wrapper .lead {
+  color: #fff;
+}
+
+/*
+body.front {
+  background: url('../images/classy_fabric.png');
+}
+body.front #get-ready-wrapper {
+  background: url('../images/beerfest-hipster-filter-bw.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 15% 0 15% 0;
+}
+
+body.front h1 {
+  color: #cccc00;
+  font-size: 700%;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000;
+}
+
+body.front h2 {
+  color: #fff;
+  font-size: 300%;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000;
+}
+
+body.front h3 {
+  color: #fff;
+  font-size: 300%;
+  text-transform: uppercase;
+  text-align: right;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.footer {
+  border: none;
+}
+
+#footer-wrapper {
+}
+*/
