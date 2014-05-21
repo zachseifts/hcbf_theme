@@ -3,9 +3,47 @@
  * remove this comment and start adding your styles to this file.
  */
 
+body {
+  background: url('../images/classy_fabric.png');
+}
+
+#header-wrapper {
+  height: 100%;
+  max-height: 900px;
+  background-image: url('../images/get-ready.jpg');
+  padding: 80px 0 80px 0;
+  margin-bottom: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.region-content {
+  padding-top: 100px;
+  background: #fff;
+}
+
+#message-wrapper {
+  background: #fff;
+}
+
+#navbar-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
 .wrapper {
   padding-bottom: 40px;
-  margin-bottom: 100px;
 }
 
 .heading {
@@ -19,6 +57,24 @@
 
 .inverse-wrapper .lead {
   color: #fff;
+}
+
+.fa-6x {
+  font-size: 10em;
+}
+
+#footer-wrapper {
+  margin-top: 50px;
+  padding-top: 50px;
+  min-height: 400px;
+}
+
+#footer-wrapper a {
+  color: #fff;
+}
+
+#footer-wrapper a:hover {
+  color: #00526e;
 }
 
 /*

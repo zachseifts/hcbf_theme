@@ -35,3 +35,18 @@ function hcbf_theme_form_session_limit_user_settings_alter(&$form, &$form_state,
   $form['#prefix'] = '<div id="session_limit-wrapper" class="wrapper"><div class="container"><div class="row"><div class="col-xs-12">';
   $form['#suffix'] = '</div></div></div></div>';
 }
+
+/**
+ * Implements hook_preprocess_html()
+ */
+function hcbf_theme_preprocess_html(&$variables) {
+  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array('type' => 'external'));
+}
+
+/**
+ * Implements hook_preprocess_page()
+ */
+function hcbf_theme_preprocess_page(&$variables) {
+  $variables['copyright_year'] = date("Y");
+}
+

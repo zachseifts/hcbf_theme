@@ -73,7 +73,40 @@
  * @ingroup themeable
  */
 ?>
-<div id="meta-wrapper">
+<header id="header-wrapper" class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+          <img class="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav id="navbar-wrapper" class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="395">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><?php print $site_name; ?></a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <?php if (!empty($primary_nav)): ?>
+          <?php print render($primary_nav); ?>
+        <?php endif; ?>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="message-wrapper">
   <div class="container">
     <div class="row">
       <?php if (!$is_front): ?>
@@ -105,22 +138,29 @@
 <footer id="footer-wrapper" class="inverse-wrapper">
   <div class="container">
     <div class="row">
+      <div class="col-xs-12">
+        <p class="lead">&copy; <?php print $site_name; ?> <?php print $copyright_year; ?>. All rights reserved.</p>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <p>&copy; High Country Beer Fest [YYYY]</p>
-        <p>Footer 1</p>
+        <p>The <?php print $site_name; ?> is a part of <a href="http://ivorytowerscience.com/" title="Ivory Tower Science">Ivory Tower Science</a>, a research based non-profit that directly supports student scholarships and academic research in Fermentation Sciences.</p>
       </div>
-      <div class="col-xs-12 col-sm-2">
-        <p>Footer 2</p>
+      <div class="col-xs-12 col-sm-3">
+        <h3>Get involved</h3>
+        <ul class="nav nav-stacked nav-pills">
+          <li><a href="/volunteer">Want to volunteer?</a></li>
+          <li><a href="/breweries/register">Want to register as a brewery?</a></li>
+          <li><a href="/contact">Contact us</a></li>
+        </ul>
       </div>
-      <div class="col-xs-12 col-sm-2">
-        <p>Footer 3</p>
-      </div>
-      <div class="col-xs-12 col-sm-2">
-        <h1>Follow us</h1>
-        <ul>
-          <li>Twitter</li>
-          <li>Facebook</li>
-          <li>Blog</li>
+      <div class="col-xs-12 col-sm-3">
+        <h3>Let's connect</h3>
+        <ul class="nav nav-stacked nav-pills">
+          <li><a href="https://twitter.com/hcbeerfest"><i class="fa fa-twitter-square fa-2x"></i> Follow us on Twitter</a></li>
+          <li><a href="https://www.facebook.com/hcbeerfest"><i class="fa fa-facebook-square fa-2x"></i> Like us on Facebook</a></li>
+          <li><a href="https://github.com/HighCountryBeerFest"><i class="fa fa-github-square fa-2x"></i> Fork us on Github</a></li>
         </ul>
       </div>
     </div>
