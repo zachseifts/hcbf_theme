@@ -78,7 +78,7 @@
     <div class="row">
       <div class="col-xs-12 text-center">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img class="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <img class="img-responsive center-block" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       </div>
     </div>
