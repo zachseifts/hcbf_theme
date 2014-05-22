@@ -68,8 +68,9 @@ function hcbf_theme_preprocess_page(&$variables) {
 
   // Social media icons
   $social_media_items = array(
-    l('<i class="fa fa-twitter-square fa-3x"></i>', 'https://twitter.com/hcbeerfest', array('html' => TRUE)),
-    l('<i class="fa fa-facebook-square fa-3x"></i>', 'https://www.facebook.com/hcbeerfest', array('html' => TRUE)),
+    l('<i class="fa fa-envelope-square fa-3x"></i><span class="visible-xs"> Contact us</span>', 'contact', array('html' => TRUE, 'attributes' => array('title' => 'Contact us'))),
+    l('<i class="fa fa-twitter-square fa-3x"></i><span class="visible-xs"> Follow us on Twitter</span>', 'https://twitter.com/hcbeerfest', array('html' => TRUE, 'attributes' => array('title' => 'Follows us on Twitter'))),
+    l('<i class="fa fa-facebook-square fa-3x"></i><span class="visible-xs"> Like us on Facebook</span>', 'https://www.facebook.com/hcbeerfest', array('html' => TRUE, 'attributes' => array('title' => 'Like us on Facebook'))),
   );
 
   $menu_items = array_merge($admin_items, $social_media_items);
