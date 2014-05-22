@@ -96,10 +96,7 @@
       </button>
     </div>
     <div class="collapse navbar-collapse" id="main-menu">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://twitter.com/hcbeerfest" title="Follow us on Twitter"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-        <li><a href="https://www.facebook.com/hcbeerfest" title="Like us on Facebook"><i class="fa fa-facebook-square fa-3x"></i></a></li>
-      </ul>
+      <?php print $primary_navigation; ?>
     </div>
   </div>
 </nav>

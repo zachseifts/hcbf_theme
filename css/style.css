@@ -25,13 +25,28 @@ p {
   background-position: center;
 }
 
-.region-content {
+.form-required {
+  color: #f00;
+}
+
+body.front .region-content {
   padding-top: 40px;
+}
+
+.region-content {
   background: #fff;
+}
+
+body.not-front #message-wrapper {
+  padding-top: 40px;
 }
 
 #message-wrapper {
   background: #fff;
+}
+
+.form-wrapper {
+  padding-top: 0 !important;
 }
 
 #navbar-wrapper {

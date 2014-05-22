@@ -47,6 +47,36 @@ function hcbf_theme_preprocess_html(&$variables) {
  * Implements hook_preprocess_page()
  */
 function hcbf_theme_preprocess_page(&$variables) {
+  global $user;
+
   $variables['copyright_year'] = date("Y");
+
+  // Build the admin menu items
+  $admin_items = array();
+
+  if (module_exists('hcbf_volunteers')) {
+    if (in_array('Volunteer Manager', array_values($user->roles))) {
+      $admin_items[] = l('<i class="fa fa-cog fa-3x"></i> ' . t('Manage Volunteers'), 'volunteer/manage', array('html' => TRUE));
+    }
+  }
+
+  if (module_exists('hcbf_breweries')) {
+    if (in_array('Brewery Manager', array_values($user->roles))) {
+      $admin_items[] = l('<i class="fa fa-cog fa-3x"></i> ' . t('Manage Breweries'), 'breweries/manage', array('html' => TRUE));
+    }
+  }
+
+  // Social media icons
+  $social_media_items = array(
+    l('<i class="fa fa-twitter-square fa-3x"></i>', 'https://twitter.com/hcbeerfest', array('html' => TRUE)),
+    l('<i class="fa fa-facebook-square fa-3x"></i>', 'https://www.facebook.com/hcbeerfest', array('html' => TRUE)),
+  );
+
+  $menu_items = array_merge($admin_items, $social_media_items);
+
+  $variables['primary_navigation'] = theme('item_list', array(
+    'items' => $menu_items,
+    'attributes' => array('class' => array('nav', 'navbar-nav', 'navbar-right'))
+  ));
 }
 
