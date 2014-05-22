@@ -45,6 +45,12 @@ body.not-front #message-wrapper {
   background: #fff;
 }
 
+.icon {
+  background: url('../images/classy_fabric.png');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .form-wrapper {
   padding-top: 0 !important;
 }
