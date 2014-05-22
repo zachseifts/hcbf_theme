@@ -85,7 +85,7 @@
   </div>
 </header>
 
-<nav id="navbar-wrapper" class="navbar navbar-default navbar-static-top" data-spy="affix" data-offset-top="395">
+<nav id="navbar-wrapper" class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -94,13 +94,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><?php print $site_name; ?></a>
     </div>
     <div class="collapse navbar-collapse" id="main-menu">
       <ul class="nav navbar-nav navbar-right">
-        <?php if (!empty($primary_nav)): ?>
-          <?php print render($primary_nav); ?>
-        <?php endif; ?>
+        <li><a href="https://twitter.com/hcbeerfest" title="Follow us on Twitter"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+        <li><a href="https://www.facebook.com/hcbeerfest" title="Like us on Facebook"><i class="fa fa-facebook-square fa-3x"></i></a></li>
       </ul>
     </div>
   </div>

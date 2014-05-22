@@ -7,6 +7,11 @@ body {
   background: url('../images/classy_fabric.png');
 }
 
+td,
+p {
+  font-size: 16px;
+}
+
 #header-wrapper {
   height: 100%;
   max-height: 900px;
@@ -20,15 +25,8 @@ body {
   background-position: center;
 }
 
-.affix {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
 .region-content {
-  padding-top: 100px;
+  padding-top: 40px;
   background: #fff;
 }
 
@@ -37,13 +35,12 @@ body {
 }
 
 #navbar-wrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
   margin-bottom: 0;
 }
 
 .wrapper {
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .heading {
@@ -60,7 +57,7 @@ body {
 }
 
 .fa-6x {
-  font-size: 10em;
+  font-size: 7em;
 }
 
 #footer-wrapper {
