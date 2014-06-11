@@ -73,6 +73,30 @@
  * @ingroup themeable
  */
 ?>
+<div id="primary-navbar" role="banner" class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <?php if (!empty($primary_nav)): ?>
+      <div class="navbar-collapse collapse primary-nav">
+        <nav role="navigation">
+          <?php if (!empty($primary_nav)): ?>
+            <?php print render($primary_nav); ?>
+          <?php endif; ?>
+        </nav>
+      </div>
+    <?php endif; ?>
+  </div>
+</div>
+
 <header id="header-wrapper" class="wrapper">
   <div class="container">
     <div class="row">
