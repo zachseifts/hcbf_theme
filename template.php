@@ -44,6 +44,13 @@ function hcbf_theme_preprocess_html(&$variables) {
 }
 
 /**
+ * Overrides the default menu_tree function for the primary nav.
+ */
+function hcbf_theme_menu_tree__primary(&$variables) {
+  return '<ul class="menu nav navbar-nav navbar-right">' . $variables['tree'] . '</ul>';
+}
+
+/**
  * Implements hook_preprocess_page()
  */
 function hcbf_theme_preprocess_page(&$variables) {
