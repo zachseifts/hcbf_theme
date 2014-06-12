@@ -164,7 +164,8 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <p>The <?php print $site_name; ?> is a part of <a href="http://ivorytowerscience.com/" title="Ivory Tower Science">Ivory Tower Science</a>, a research based non-profit that directly supports student scholarships and academic research in Fermentation Sciences.</p>
+        <p>The <?php print $site_name; ?> is hosted by <a href="http://ivorytowerscience.com/" title="Ivory Tower, Inc.">Ivory Tower, Inc.</a>, a research based non-profit that directly supports student scholarships and academic research in Fermentation Sciences at ASU.</p>
+        <p>A percentage of profits from this event will go to support <a href="http://www.highcountrylocalfirst.org/" title="High Country Local First">High Country Local First</a> and <a href="http://www.highcountrymommies.com/" title="High Country Mommies">High Country Mommies</a>.</p>
       </div>
       <div class="col-xs-12 col-sm-3">
         <h3>Get involved</h3>
