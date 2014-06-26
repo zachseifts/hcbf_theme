@@ -59,6 +59,11 @@ body.not-front #message-wrapper {
   margin-bottom: 0;
 }
 
+#navbar-description {
+  padding-top: 22px;
+  padding-bottom: 11px;
+}
+
 #primary-navbar {
   margin-bottom: 0;
 }

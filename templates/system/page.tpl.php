@@ -112,6 +112,7 @@
 <nav id="navbar-wrapper" class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
+      <p class="navbar-brand hidden-xs" id="navbar-description">Benefit/Fundraiser for the ASU Fermentation Sciences</p>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
