@@ -59,6 +59,10 @@ body.not-front #message-wrapper {
   margin-bottom: 0;
 }
 
+#navbar-dates {
+  margin-bottom: 0;
+}
+
 #navbar-description {
   padding-top: 22px;
   padding-bottom: 11px;
