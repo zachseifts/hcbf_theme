@@ -82,7 +82,7 @@
 ?>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-9">
+    <div class="col-xs-12 col-sm-6 col-lg-8">
       <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
         <?php print $user_picture; ?>
@@ -114,7 +114,7 @@
 
       </div>
     </div>
-    <div class="col-xs-12 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-lg-4">
       <div class="well">
         <div class="text-center">
           <i class="icon fa fa-ticket fa-5x"></i>
