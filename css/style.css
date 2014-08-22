@@ -35,6 +35,7 @@ body.front .region-content {
 
 .region-content {
   background: #fff;
+  padding-bottom: 50px;
 }
 
 body.not-front #message-wrapper {
