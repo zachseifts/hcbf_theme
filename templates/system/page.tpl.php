@@ -76,7 +76,7 @@
 <div id="primary-navbar" role="banner" class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <p class="navbar-brand hidden-xs" id="navbar-dates">August 30<sup>th</sup>, 2014 3:00pm - 7:00pm</p>
+      <p class="navbar-brand hidden-xs" id="navbar-dates">August 29<sup>th</sup>, 2015</p>
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".primary-nav">
         <span class="sr-only">Toggle navigation</span>
