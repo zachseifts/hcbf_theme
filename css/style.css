@@ -29,6 +29,19 @@ p {
   color: #f00;
 }
 
+label {
+  font-size: 15px;
+}
+
+form div.description {
+  font-size: 12px;
+}
+
+form div.form-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 body.front .region-content {
   padding-top: 40px;
 }
