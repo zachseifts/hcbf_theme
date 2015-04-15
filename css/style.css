@@ -14,15 +14,31 @@ p {
 
 #header-wrapper {
   height: 100%;
-  max-height: 900px;
   background-image: url('../images/header-img-1.jpg');
-  padding: 80px 0 80px 0;
   margin-bottom: 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+}
+
+body.front #header-wrapper {
+  max-height: 900px;
+  padding: 80px 0 80px 0;
+}
+
+body.not-front #header-wrapper {
+  max-height: 900px;
+  padding: 10px 0 10px 0;
+}
+
+body.page-breweries #header-wrapper {
+  background-image: url('../images/beerfest-hipster-filter-bw.jpg');
+}
+
+body.page-blog #header-wrapper {
+  background-image: url('../images/header-img-2.jpg');
 }
 
 .form-required {
