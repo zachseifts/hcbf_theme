@@ -73,10 +73,10 @@
  * @ingroup themeable
  */
 ?>
-<div id="primary-navbar" role="banner" class="navbar navbar-default">
+<div id="primary-navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a href="/" class="navbar-brand hidden-xs" id="navbar-dates">August 29<sup>th</sup>, 2015</a>
+      <a href="/" class="navbar-brand">High Country Beer Fest | 8/29/2015</a>
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".primary-nav">
         <span class="sr-only">Toggle navigation</span>
