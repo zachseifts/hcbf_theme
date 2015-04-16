@@ -33,6 +33,10 @@ body.not-front #header-wrapper {
   padding: 55px 0 10px 0;
 }
 
+body.admin-menu .navbar-fixed-top {
+  top: 28px;
+}
+
 body.page-breweries #header-wrapper {
   background-image: url('../images/beerfest-hipster-filter-bw.jpg');
 }
