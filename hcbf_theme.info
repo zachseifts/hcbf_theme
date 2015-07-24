@@ -9,3 +9,4 @@ regions[help]           = 'Help'
 regions[content]        = 'Content'
 
 stylesheets[all][] = css/style.css
+scripts[] = js/hcbf_theme.js
