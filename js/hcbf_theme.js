@@ -6,7 +6,7 @@
       if (typeof ga !== 'undefined') {
         $('a[data-ga-event]').each(function() {
           $(this).click(function(e) {
-            ga('send', 'event', 'ticket_click', $(this).attr('data-ga-action'), $(this).attr('data-ga-label'));
+            ga('send', 'event', $(this).attr('data-ga-category'), $(this).attr('data-ga-action'), $(this).attr('data-ga-label'));
           });
         });
       }
