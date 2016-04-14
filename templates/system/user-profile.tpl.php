@@ -34,10 +34,12 @@
  * @ingroup themeable
  */
 ?>
-<div class="user-profile-wrapper">
+<div class="user-pass-wrapper">
   <div class="container">
-    <div class="profile"<?php print $attributes; ?>>
-      <?php print render($user_profile); ?>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <p>Hello! Welcome to your user page.</p>
+      </div>
     </div>
   </div>
 </div>

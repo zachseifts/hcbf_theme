@@ -37,6 +37,16 @@ function hcbf_theme_form_session_limit_user_settings_alter(&$form, &$form_state,
 }
 
 /**
+ * Implements hook_form_FORM_ID_alter()
+ *
+ * Overrides the user_profile_form form.
+ */
+function hcbf_theme_form_user_profile_form_alter(&$form, &$form_state, &$form_id) {
+  $form['#prefix'] = '<div id="user_account_form-wrapper" class="wrapper"><div class="container"><div class="row"><div class="col-xs-12">';
+  $form['#suffix'] = '</div></div></div></div>';
+}
+
+/**
  * Implements hook_preprocess_html()
  */
 function hcbf_theme_preprocess_html(&$variables) {
@@ -64,6 +74,10 @@ function hcbf_theme_preprocess_page(&$variables) {
     l('<i class="fa fa-twitter-square fa-3x"></i>', 'https://twitter.com/hcbeerfest', array('html' => TRUE, 'attributes' => array('title' => 'Follows us on Twitter'))),
     l('<i class="fa fa-facebook-square fa-3x"></i>', 'https://www.facebook.com/hcbeerfest', array('html' => TRUE, 'attributes' => array('title' => 'Like us on Facebook'))),
   );
+
+  if (user_is_logged_in()) {
+    $menu_items[] = l('<i class="fa fa-user fa-3x"></i>', 'user', array('html' => TRUE, 'attributes' => array('title' => 'Your account')));
+  }
 
   $variables['primary_navigation'] = theme('item_list', array(
     'items' => $menu_items,
