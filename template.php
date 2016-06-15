@@ -50,7 +50,7 @@ function hcbf_theme_form_user_profile_form_alter(&$form, &$form_state, &$form_id
  * Implements hook_preprocess_html()
  */
 function hcbf_theme_preprocess_html(&$variables) {
-  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array('type' => 'external'));
+  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array('type' => 'external'));
 }
 
 /**

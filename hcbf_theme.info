@@ -10,3 +10,4 @@ regions[content]        = 'Content'
 
 stylesheets[all][] = css/style.css
 scripts[] = js/hcbf_theme.js
+scripts[] = js/parallax.min.js
